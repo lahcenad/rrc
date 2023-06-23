@@ -73,7 +73,7 @@ function App() {
         {imgURL ? (
           <img className='result-image' src={imgURL} alt="background removed" />
         ) : (
-          <p>Preview Download will be shown here.</p>
+          <p>Preview and Download will be shown here.</p>
         )}
 
         {imgURL ? <button onClick={handleDownload}>Download Image</button> : null}
