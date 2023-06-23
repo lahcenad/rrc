@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Gitdi - Background Remover</h2>
+      <h2>Gitdi - Background Remover AI</h2>
       <form id='form-container' onSubmit={handleSubmit}>
       <label htmlFor="input-tag">Upload Image
       <input type="file" className='custom-file-input' id='input-tag' onChange={handleFileChange} name="file" />
@@ -73,7 +73,7 @@ function App() {
         {imgURL ? (
           <img className='result-image' src={imgURL} alt="background removed" />
         ) : (
-          <p>Preview will be shown here.</p>
+          <p>Preview Download will be shown here.</p>
         )}
 
         {imgURL ? <button onClick={handleDownload}>Download Image</button> : null}
